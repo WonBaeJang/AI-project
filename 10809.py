@@ -17,12 +17,11 @@
 alphabet = list('abcdefghijklmnopqrstuvwxyz')
 res = []
 s = list(input())
-for x in alphabet:
+for j, x in enumerate(alphabet):
     for i, a in enumerate(s):
-        if x == a:
+        if a == x:
             res.append(i)
             break
-        if i == len(s):
+        if i == len(s) - 1:
             res.append(-1)
-        
-print(res)
+print(*res, sep=' ')
