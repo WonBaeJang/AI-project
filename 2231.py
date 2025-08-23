@@ -14,4 +14,17 @@
 # 예제 출력 1 
 # 198
 
-n = int(input())
+n=int(input())
+nl = list(map(int, str(n)))
+ans = []
+for m in range(max(1, n - len(nl) * 9), n + 1):
+    res = m
+    ml = list(map(int, str(m)))
+    for x in ml:
+        res += x
+    if res == n:
+        ans.append(m)
+if len(ans):
+    print(ans[0])
+else:
+    print(0)
