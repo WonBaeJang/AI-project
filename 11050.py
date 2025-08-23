@@ -21,3 +21,8 @@
 # 예제 출력 1 
 # 10
 
+import math as m
+
+n, k = map(int, input().split())
+res = m.factorial(n) // m.factorial(n-k) // m.factorial(k)
+print(res)
