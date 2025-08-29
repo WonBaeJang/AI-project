@@ -15,7 +15,6 @@
 # 3
 import sys
 input = sys.stdin.readline
-ans = 0
 n = int(input())
 n -= 1
 m = 1
